@@ -20,7 +20,7 @@
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title text-center">Login</h4>
-							<form method="POST" class="my-login-validation" novalidate="">
+							<form method="POST" class="my-login-validation" novalidate="" id="formLogin"name="formLogin">
 								<div class="form-group">
 									<label for="email">E-Mail Address</label>
 									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
@@ -38,17 +38,17 @@
 								</div>
 
 								<div class="form-group m-0">
-									<button type="button" class="btn btn-primary btn-block" onclick="loginUser()">
+									<button type="submit" class="btn btn-primary btn-block" >
 										Login
 									</button>
 								</div>
                                 <div class="form-group m-0 mt-4">
-									<button type="submit" class="btn btn-primary btn-block">
+									<button type="button" class="btn btn-primary btn-block">
 										Close
 									</button>
                                 </div>
 								<div class="mt-4 text-center">
-									Don't have an account? <a href="registro.html">Create One</a>
+									Don't have an account? <a href="/registro.html">Create One</a>
 								</div>
 							</form>
 						</div>
@@ -61,33 +61,19 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script mod src="/js/app.js"></script>
 
-     <!-- Firebase -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <!-- Firebase --> 
+    <!-- The core Firebase JS SDK is always required and must be listed first 
     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+     TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries 
     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script> -->
+	<script src ="js/app.js" type="module"></script>
 
-    <script>
-        var firebaseConfig = {
-        apiKey: "AIzaSyBsgg_UYWJtJECN5rgTUXnER-ksIBppMME",
-        authDomain: "web40-c4af6.firebaseapp.com",
-        projectId: "web40-c4af6",
-        storageBucket: "web40-c4af6.appspot.com",
-        messagingSenderId: "932455799644",
-        appId: "1:932455799644:web:2dddd4173ef3e5b49bff99",
-        measurementId: "G-XCF01NEBYL"
-    };
-	
-    // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script> 
+   
 </body>
 </html>
 
