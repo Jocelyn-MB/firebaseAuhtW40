@@ -19,6 +19,7 @@ RegistroForm.addEventListener("submit", async (e)=>{
     const userCredentials= await createUserWithEmailAndPassword(auth,email,password)
 
     console.log("Bienvenido"+ userCredentials.user.email);
+    window.location.href = "/principal.html";
     //console.log(userCredentials); ver si me regresa las credenciales
   }
   catch (error) {
